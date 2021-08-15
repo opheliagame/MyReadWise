@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: ReadWise
+---
+
+<div class="flex w-full overflow-x-scroll transition-all duration-1000 ease-in-out" id="clips-div">
+  {% for clip in clippings %}
+    <div class="flex-none w-full grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+      <div>{{ clip.book }}</div>
+      <div>{{ clip.author }}</div>
+      <div>{{ clip.text }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="flex justify-end text-2xl">
+  <button class="p-4 rounded-full bg-black focus:outline-none" id="next-button">👉</button>
+</div>

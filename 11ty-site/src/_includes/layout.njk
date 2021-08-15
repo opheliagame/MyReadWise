@@ -15,11 +15,24 @@
 </head>
 <body class="bg-yellow-100">
  
-  <div class="md:container md:mx-auto px-8 md:px-32">
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
     {% include "_partials/header.njk" %}
 
     {{ content | safe }}
   </div>
   
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
 </body>
 </html>
