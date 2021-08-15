@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+title: ReadWise
+---
+
+<div class="grid grid-cols-3 grid-flow-row gap-4 text-sm p-2">
+  {% for clip in clippings %}
+    <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+      <div>{{ clip.book }}</div>
+      <div>{{ clip.author }}</div>
+      <div>{{ clip.text }}</div>
+    </div>
+  {% endfor %}
+</div>
