@@ -25,6 +25,7 @@
     const clipsDiv = document.getElementById('clips-div')
     const mainDiv = document.getElementById('main-div')
     const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
     nextButton.addEventListener('click', () => {
       const offsetX = clipsDiv.offsetWidth
       clipsDiv.scrollBy({
