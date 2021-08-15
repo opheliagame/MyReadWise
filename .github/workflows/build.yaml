@@ -23,10 +23,11 @@ jobs:
 
       - name: Install dependencies & build
         run: |
+          cd 11ty-site
           npm ci
           npm run build          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./_site
+          publish_dir: ./11ty-site/_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
