@@ -2,8 +2,8 @@ name: Build Eleventy
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - '11ty-site/**'
 
 jobs:
   build:
