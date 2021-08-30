@@ -5,16 +5,17 @@ title: ReadWise
 
 <div class="flex w-full py-1 md:py-4 overflow-x-scroll transition-all duration-1000 ease-in-out" id="clips-div">
   {% for clip in clippings %}
-    <div class="flex-none w-full flex justify-center">
+  {% set clip = clippings | random %}
+    <div class="flex-none w-full flex justify-center px-1">
       <div class="w-full md:w-3/4 grid grid-rows-card rounded-md shadow-md p-4 bg-white">
-        <div>{{ clip.book }}</div>
-        <div>{{ clip.author }}</div>
-        <div>{{ clip.text }}</div>
+        <div class="font-sans font-bold">{{ clip.book }}</div>
+        <div class="font-sans uppercase font-thin">{{ clip.author }}</div>
+        <div class="font-serif text-sm">{{ clip.text }}</div>
       </div>
     </div>
   {% endfor %}
 </div>
 
-<div class="flex justify-end text-2xl py-2">
-  <button class="p-4 rounded-full bg-white focus:outline-none" id="next-button">👉</button>
+<div class="flex justify-end text-2xl py-2 px-2">
+  <button class="p-2 rounded-full bg-white focus:outline-none" id="next-button">👉</button>
 </div>

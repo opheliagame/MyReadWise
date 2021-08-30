@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["'Poppins'", 'sans-serif']
+        sans: ["'Open Sans Condensed'", 'sans-serif', 'ui-sans-serif', 'system-ui'],
+        serif: ["'EB Garamond'", 'ui-serif', 'Georgia']
       },
       gridTemplateRows: {
        '8': 'repeat(8, minmax(0, 1fr))',

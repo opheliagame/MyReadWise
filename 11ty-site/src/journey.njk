@@ -1,0 +1,12 @@
+---
+layout: layout.njk
+title: ReadWise
+---
+
+{% for book in books %}
+  {% set book_url = "/books/"+book.id+".html" %}
+  <a href="{{ book_url | url }}" class="px-2">
+    <h3 class="text-base md:text-xl lg:text-xl">{{ book.name }}</h3>
+  </a>
+{% endfor %}
+

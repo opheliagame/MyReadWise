@@ -7,8 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | url }}" >
 
   <title>{{ title }}</title>
@@ -26,6 +25,9 @@
     const mainDiv = document.getElementById('main-div')
     const nextButton = document.getElementById('next-button')
     clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
     nextButton.addEventListener('click', () => {
       const offsetX = clipsDiv.offsetWidth
       clipsDiv.scrollBy({

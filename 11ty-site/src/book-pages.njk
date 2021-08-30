@@ -1,0 +1,22 @@
+---
+pagination: 
+  data: books
+  size: 1
+  alias: book
+
+permalink: "books/{{ book.id }}.html"
+layout: layout.njk
+---
+
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">{{ book.name }}</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    {% for highlight in book.highlights %}
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        {# <div class="font-sans font-bold">{{ highlight }}</div> #}
+        {# <div class="font-sans uppercase">{{ clip.author }}</div> #}
+        <div class="font-serif text-sm">{{ highlight }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
