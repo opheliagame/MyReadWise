@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/my-readwise/style.css" >
+
+  <title></title>
+</head>
+<body class="bg-yellow-100">
+ 
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
+    <header class="flex justify-between items-center py-8 px-1">
+  <a href="/my-readwise/" class="flex-initial">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">my readwise</h1>
+  </a>
+  <div class="flex-1 flex justify-end items-center ">
+    <a href="/my-readwise/review" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">review</h3>
+    </a>
+    <a href="/my-readwise/journey" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">journey</h3>
+    </a>
+  </div>
+</header>
+
+    
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">s Own</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">And, I wondered, would PRIDE AND PREJUDICE have been a better novel if Jane Austen had not thought it necessary to hide her manuscript from visitors?</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Had Tolstoi lived at the Priory in seclusion with a married lady &#39;cut off from what is called the world&#39;, however edifying the moral lesson, he could scarcely, I thought, have written WAR AND PEACE.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">This is an important book, the critic assumes, because it deals with war. This is an insignificant book because it deals with the feelings of women in a drawing-room.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">She may be beginning to use writing as an art, not as a method of selfexpression.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Even so it remains obvious, even in the writing of Proust, that a man is terribly hampered and partial in his knowledge of women, as a woman in her knowledge of men.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Even so it remains obvious, even in the writing of Proust, that a man is terribly hampered and partial in his knowledge of women, as a woman in her knowledge of men.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">has only to go into any room in any street for the whole of that extremely complex force of femininity to fly in one&#39;s face.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Think with what humanity and brilliancy men, from the earliest ages, have pointed out to women that dark place at the back of the head!</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Coleridge perhaps meant this when he said that a great mind is androgynous.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Now the writer, as I think, has the chance to live more than other people in the presence of this reality. It is his business to find it and collect it and communicate it to the rest of us.</div>
+      </div>
+    
+  </div>
+</div>
+  </div>
+  
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
+</body>
+</html>

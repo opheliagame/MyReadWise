@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/my-readwise/style.css" >
+
+  <title></title>
+</head>
+<body class="bg-yellow-100">
+ 
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
+    <header class="flex justify-between items-center py-8 px-1">
+  <a href="/my-readwise/" class="flex-initial">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">my readwise</h1>
+  </a>
+  <div class="flex-1 flex justify-end items-center ">
+    <a href="/my-readwise/review" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">review</h3>
+    </a>
+    <a href="/my-readwise/journey" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">journey</h3>
+    </a>
+  </div>
+</header>
+
+    
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">Sex Love in India</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Like many other terms, such as “Hindu” and “Buddhist,” it has been applied with hindsight to peoples of the past who did not apply it to themselves.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">as a hegemonic and oppressive phenomenon, with the little traditions getting progressively “Sanskritized” and the great tradition reasserting its dominance by swallowing them up.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">There are more than half a dozen varying accounts of the birth of the god Kartikeya or Skanda in different Sanskrit texts.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">has ranged from refusing marriage by taking religious vows and joining a same-sex celibate community, to being imprisoned, executed, or put in a mental asylum.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">As far as we know, no one has ever been executed for homosexuality in India.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Resistance to marriage often functions to prepare spaces where same-sex attachments can flourish.</div>
+      </div>
+    
+  </div>
+</div>
+  </div>
+  
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/my-readwise/style.css" >
+
+  <title></title>
+</head>
+<body class="bg-yellow-100">
+ 
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
+    <header class="flex justify-between items-center py-8 px-1">
+  <a href="/my-readwise/" class="flex-initial">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">my readwise</h1>
+  </a>
+  <div class="flex-1 flex justify-end items-center ">
+    <a href="/my-readwise/review" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">review</h3>
+    </a>
+    <a href="/my-readwise/journey" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">journey</h3>
+    </a>
+  </div>
+</header>
+
+    
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">_2086545_</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">This is why women&#39;s organizations working on the issue prefer to use a range of other legal options that address concrete problems within marriage-economic subservience, lack of residential options, and domestic violence-rather than the Dowry Prohibition Act itself.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Just to go back to that taunt, though, that women are women&#39;s worst enemies-when we understand the structure ofthe patriarchal virilocal family, we can see that it is tailormade to pit women against each other.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Oyewumi makes the radical suggestion that &#39;gender&#39; as a category did not operate in any significant way in pre-colonial Yoruba and many other African cultures</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Two-spirit people were often the visionaries, the healers, the medicine people, the nannies of orphans, the care-givers.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">they were making us see that &#39;modesty&#39;­ which is invested in hiding the body with clothes-is &#39;a way of resisting and enhancing sexual curiosity, not of curbing it.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">As Simone de Beauvoir put it, &#39;One is not born, but rather becomes a woman&#39;</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Until the middle of the twentieth century in the West, for instance, pink was the colour for boys and blue for girls!</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Mernissi shows that while both Ghazali and Freud see female sexuality as destructive to the social order, Ghazali argues this through an understanding of the active nature of female sexuality, while Freud makes his argument through an understanding of female sexuality as passive.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Such feminists are often called &#39;radical feminists&#39;; they believe that women&#39;s reproductive biology-the process of gestation and the experience ofmothering-fundamentally affects their relationship to the external world</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">. The female experience is invisible here, and women&#39;s tendency not to take hard, de-contextualized moral positions is seen by mainstream Western philosophy as a sign of their moral immaturity. To deny difference is, therefore, to agree with the patriarchal negation of femininity as worthless.</div>
+      </div>
+    
+  </div>
+</div>
+  </div>
+  
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
+</body>
+</html>
