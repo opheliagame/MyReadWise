@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/my-readwise/style.css" >
+
+  <title></title>
+</head>
+<body class="bg-yellow-100">
+ 
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
+    <header class="flex justify-between items-center py-8 px-1">
+  <a href="/my-readwise/" class="flex-initial">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">my readwise</h1>
+  </a>
+  <div class="flex-1 flex justify-end items-center ">
+    <a href="/my-readwise/review" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">review</h3>
+    </a>
+    <a href="/my-readwise/journey" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">journey</h3>
+    </a>
+  </div>
+</header>
+
+    
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">All About Love by bell hooks </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">One of the best guides to how to be self-loving is to give ourselves the love we are often dreaming about receiving from others</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">A commitment to a spiritual life requires us to do more than read a good book or go on a restful retreat. It requires conscious practice, a willingness to unite the way we think with the way we act.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">I once asked a rich man, who had only recently attained his status, what he liked most about his new wealth. He said that he liked seeing what money could make people do, how it could make them shift and violate their values. He personifed the culture of greed. His pleasure in being wealthy was grounded in the desire to not only have more than others but to use that power to degrade and humiliate them. To maintain and satisfy greed, one must support domination. And the world of domination is always a world without love.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Greed subsumes love and compassion; living simply makes room for them. Living simply is the primary way everyone can resist greed every day</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">The more genuine our romantic loves the more we do not feel called upon to weaken or sever ties with friends in order to strengthen ties with romantic partners</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">In Forgiveness! A Bold Choice for a Peaceful Heart, Robin Casarjian explains: “Forgiveness is a way of life that gradually transforms us from being helpless victims of our circumstances to being powerful and loving ‘co-creators’ of our reality. . . . It is the fading away of the perceptions that cloud our ability to love.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Needless to say, I did not get the love I longed for. I did get to remain in a familiar familial place of struggle</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Anyone who is truly concerned for the spiritual growth of another knows, consciously or instinctively, that he or she can signifcantly foster that growth only through a relationship of constancy.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">No doubt it was someone playing the role of leader who conjured up the notion that we “fall in love,” that we lack choice and decision when choosing a partner because when the chemistry is present, when the click is there, it just happens—it overwhelms—it takes control.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">When one knows a true love, the transformative force of that love lasts even when we no longer have the company of the person with whom we experienced profound mutual care and growth.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">I try daily to learn to leave folks as though we might never be meeting again. This practice makes us change how we talk and interact. It is a way to live consciously</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">To be here now does not mean that we do not make plans but that we learn to give the making of future plans only a small amount of energy. And once future plans are made, we release our attachment to them</div>
+      </div>
+    
+  </div>
+</div>
+  </div>
+  
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
+</body>
+</html>

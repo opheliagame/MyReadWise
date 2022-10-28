@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/my-readwise/style.css" >
+
+  <title></title>
+</head>
+<body class="bg-yellow-100">
+ 
+  <div class="md:container md:mx-auto px-8 md:px-32" id="main-div">
+    <header class="flex justify-between items-center py-8 px-1">
+  <a href="/my-readwise/" class="flex-initial">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">my readwise</h1>
+  </a>
+  <div class="flex-1 flex justify-end items-center ">
+    <a href="/my-readwise/review" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">review</h3>
+    </a>
+    <a href="/my-readwise/journey" class="px-2">
+      <h3 class="text-base md:text-xl lg:text-xl">journey</h3>
+    </a>
+  </div>
+</header>
+
+    
+<div class="pb-8">
+  <div class="font-sans text-xl p-2">The Cathedral and the Bazaar</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 text-sm">
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">‘Given enough eyeballs, all bugs are shallow.’’ I dub this: ‘‘Linus’s Law’’</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Brooks, Chapter 9: ‘‘Show me your fowchart and conceal your tables, and I shall continue to be mystifed. Show me your tables, and I won’t usually need your fowchart; it’ll be obvious.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">If you treat your beta-testers as if they’re your most valuable resource, they will respond by becoming your most valuable resource.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">. Antoine de SaintExupéry (who was an aviator and aircraft designer when he wasn’t authoring classic children’s books) said: 13.‘‘Perfection (in design) is achieved not when there is nothing more to add, but rather when there is nothing more to take away.’’</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">To solve an interesting problem, start by fnding a problem that is interesting to you.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Gerald Weinberg’s classic The Psychology of Computer Programming</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">The developer who uses only his or her own brain in a closed project is going to fall behind the developer who knows how to create an open, evolutionary context in which feedback exploring the design space, code contributions, bug-spotting, and other improvements come from from hundreds (perhaps thousands) of people.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Voluntary cultures that work this way are not actually uncommon; one other in which I have long participated is science fction fandom, which unlike hackerdom has long explicitly recognized ‘‘egoboo’’ (ego-boosting, or the enhancement of one’s reputation among other fans) as the basic drive behind volunteer activity</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">My friend, familiar with both the open-source world and large closed projects, believes that open source has been successful partly because its culture only accepts the most talented 5% or so of the programming population. She spends most of her time organizing the deployment of the other 95%, and has thus observed frsthand the well-known variance of a factor of one hundred in productivity between the most able programmers and the merely competent.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">It may well turn out that one of the most important effects of open source’s success will be to teach us that play is the most economically effcient mode of creative work.</div>
+      </div>
+    
+      <div class="grid grid-rows-card rounded-md shadow-md p-4 bg-white">
+        
+        
+        <div class="font-serif text-sm">Although Linus Torvalds never made a point of opposing RMS, he set an example by looking benignly on the growth of a commercial Linux industry, by publicly endorsing the use of high-quality commercial software for specifc tasks, and by gently deriding the more purist and fanatical elements in the culture.</div>
+      </div>
+    
+  </div>
+</div>
+  </div>
+  
+  <script>
+    const clipsDiv = document.getElementById('clips-div')
+    const mainDiv = document.getElementById('main-div')
+    const nextButton = document.getElementById('next-button')
+    clipsDiv.onwheel = function(){ return false; }
+    clipsDiv.ontouchstart = function(){ return false; }
+    clipsDiv.ontouchmove = function(){ return false; }
+    clipsDiv.ontouchend = function(){ return false; }
+    nextButton.addEventListener('click', () => {
+      const offsetX = clipsDiv.offsetWidth
+      clipsDiv.scrollBy({
+        top: 0,
+        left: offsetX,
+        behavior: 'smooth'
+      })
+    })  
+  </script>
+</body>
+</html>
